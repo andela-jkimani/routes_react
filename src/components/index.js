@@ -11,7 +11,7 @@ export default class App extends Component {
   render() {
     return (
       <Router>
-        <Route component={Main} path='app'>
+        <Route component={Main} path='app' history={hashHistory}>
           <IndexRoute component={Home} />
           <Route path='/cars' component={Car} />
           <Route path='/about' component={About} />
